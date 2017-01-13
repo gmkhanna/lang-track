@@ -1,4 +1,8 @@
-.result-area {
+.result-text {
+  display: none;
+}
+
+.result-phrase {
   display: none;
 }
 

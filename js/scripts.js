@@ -8,31 +8,32 @@ var add = function(q1, q2) {
 
 $(document).ready(function() {
   $("#survey form").submit(function(event) {
-    $(".result").hide();
+    $(".resultImg").hide();
 
     var javaQ1 = parseInt($("#javaQ1").val());
     var javaQ2 = parseInt($("#javaQ2").val());
-    var resultJava = add(javaQ1, javaQ2);
+    var totalJava = add(javaQ1, javaQ2);
 
-    $(".result-area").show();
-    $("#java-result").show();
+    if (totalJava === 20) {
+      $("#java-result").fadeIn(6000);
+      $("#result20").show();
+    } else {
+    }
 
-    if (resultJava = 20) {
-    $("#java-result").fadeIn();
-    $("#result20").fadeIn();
-  } else if (resultJava = 15) {
-    $("#java-result").fadeIn();
-    $("#result15").fadeIn(2000);
-  } else if (resultJava = 10) {
-    $("#java-result").fadeIn();
-    $("#result10").fadeIn(4000);
-  } else if (resultJava = 05) {
-    $("#java-result").fadeIn();
-    $("#result05").fadeIn(6000);
-  } else if (resultJava = 0) {
-    $("#java-result").fadeIn();
-    $("#result00").fadeIn();
-  }
+    $(".result-text").fadeIn(10000);
+
+  //   if (resultJava === 0) {
+  //   $("#java-result").show();
+  //   $("#result00").show();
+  // } else if (resultJava === 05) {
+  //   $("#java-result").fadeIn();
+  //   $("#result05").fadeIn(2000);
+  // } else if (resultJava === 10) {
+  //   $("#java-result").fadeIn();
+  //   $("#result10").fadeIn(4000);
+  // } else if (resultJava === 15) {
+  //   $("#java-result").fadeIn();
+  //   $("#result15").fadeIn(6000);
 
     event.preventDefault();
   });
