@@ -1,8 +1,12 @@
-.result-text {
+.result {
   display: none;
 }
 
-.result-phrase {
+.resultImg {
+  display: none;
+}
+
+.resultPhrase {
   display: none;
 }
 
@@ -19,5 +23,25 @@ display: none;
 }
 
 #ruby-result {
+  display: none;
+}
+
+#result20 {
+  display: none;
+}
+
+#result15 {
+  display: none;
+}
+
+#result10 {
+  display: none;
+}
+
+#result05 {
+  display: none;
+}
+
+#result00 {
   display: none;
 }
