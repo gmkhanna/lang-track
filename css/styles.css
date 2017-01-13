@@ -1,0 +1,19 @@
+.result-area {
+  display: none;
+}
+
+#java-result {
+display: none;
+}
+
+#cs-result {
+  display: none;
+}
+
+#php-result {
+  display: none;
+}
+
+#ruby-result {
+  display: none;
+}
