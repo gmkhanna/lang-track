@@ -28,70 +28,42 @@ $(document).ready(function() {
     var totalPhp = add(phpQ1, phpQ2);
 
 
-    
-    $("#javaImg").hide();
-    $("#rubyImg").hide();
-    $("#csImg").hide();
-    $("#phpImg").hide();
-
-
-
-
-
-
-
-  //   $(".result").show();
-  //
-  //     if (totalJava === 0) {
-  //     $(".java-result").show();
-  //     $(".javaImg").fadeIn();
-  //     $(".result00").fadeIn(10000);
-  //   } else if (totalJava === 05) {
-  //     $(".java-result").show();
-  //     $(".javaImg").fadeIn();
-  //     $(".result05").fadeIn(7000);
-  //   } else if (totalJava === 10) {
-  //     $(".java-result").show();
-  //     $(".javaImg").fadeIn();
-  //     $(".result10").fadeIn(5000);
-  //   } else if (totalJava === 15) {
-  //     $(".java-result").show();
-  //     $(".javaImg").fadeIn();
-  //     $(".result15").fadeIn(3000);
-  //   } else {
-  //     $(".java-result").show();
-  //     $(".javaImg").fadeIn();
-  //     $(".result20").fadeIn();
-  //   }
-  //
-  //   if (totalRuby === 0) {
-  //     $("#ruby-result").fadeIn();
-  //     $("#result00").fadeIn(10000);
-  //   } else if (totalRuby === 05) {
-  //     $("#ruby-result").fadeIn();
-  //     $("#result05").fadeIn(7000);
-  //   } else if (totalRuby === 10) {
-  //     $("#ruby-result").fadeIn();
-  //     $("#result10").fadeIn(5000);
-  //   } else if (totalRuby === 15) {
-  //     $("#ruby-result").fadeIn();
-  //     $("#result15").fadeIn(3000);
-  //   } else {
-  //     $("#ruby-result").fadeIn();
-  //     $("#result20").fadeIn();
-  //   }
-  // // $("#java-result").show();
-  // // $("#ruby-result").show();
-  // // $("#cs-result").show();
-  // // $("#php-result").show();
-  // //
-  // // $("#result20").show();
-  // // $("#result15").show();
-  // // $("#result10").show();
-  // // $("#result05").show();
-  // // $("#result00").show();
-  //
-  //
+    if (totalJava === 20) {
+      $("#javaImg").show();
+        $("#javaPhrase20").show();
+        $("#javaPhrase15").hide();
+        $("#javaPhrase10").hide();
+        $("#javaPhrase05").hide();
+        $("#javaPhrase00").hide();
+    } else if (totalJava === 15) {
+      $("#javaImg").show();
+        $("#javaPhrase20").hide();
+        $("#javaPhrase15").show();
+        $("#javaPhrase10").hide();
+        $("#javaPhrase05").hide();
+        $("#javaPhrase00").hide();
+    } else if (totalJava === 10) {
+      $("#javaImg").show();
+        $("#javaPhrase20").hide();
+        $("#javaPhrase15").hide();
+        $("#javaPhrase10").show();
+        $("#javaPhrase05").hide();
+        $("#javaPhrase00").hide();
+      }  else if (totalJava === 05) {
+        $("#javaImg").show();
+        $("#javaPhrase20").hide();
+        $("#javaPhrase15").hide();
+        $("#javaPhrase10").hide();
+        $("#javaPhrase05").show();
+        $("#javaPhrase00").hide();
+      } else {
+        $("#javaImg").show();
+          $("#javaPhrase20").hide();
+          $("#javaPhrase15").hide();
+          $("#javaPhrase10").hide();
+          $("#javaPhrase05").hide();
+          $("#javaPhrase00").show();
+      }
 
     event.preventDefault();
   });
