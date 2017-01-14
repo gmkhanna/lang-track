@@ -1,11 +1,26 @@
+.jumbotron {
+background-image: url("../img/download.jpg");
+text-shadow: 4px 4px 4px red;
+background-size: 100%;
+}
+
+.jumboH1{
+  color: white;
+}
+
 .result {
   display: none;
 }
 
 .resultImg {
   display: none;
+  float: left;
 }
 
 .resultPhrase {
   display: none;
+}
+
+#javaImg {
+  float: left;
 }
