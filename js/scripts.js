@@ -8,8 +8,12 @@ var add = function(q1, q2) {
 
 $(document).ready(function() {
   $("#survey form").submit(function(event) {
-    $(".result").show();
-    $(".resultImg").show();
+    $("#result-main").fadeIn(5000);
+    $(".result-phrase").fadeIn(5000);
+    $("#javaImg").fadeIn(10000);
+    $("#rubyImg").fadeIn(10000);
+    $("#phpImg").fadeIn(10000);
+    $("#csImg").fadeIn(10000);
 
     var javaQ1 = parseInt($("#javaQ1").val());
     var javaQ2 = parseInt($("#javaQ2").val());
@@ -29,160 +33,137 @@ $(document).ready(function() {
 
 
     if (totalJava === 20) {
-      $("#javaImg").show();
-        $("#javaPhrase20").show();
+        $("#javaPhrase20").fadeIn(20000);
         $("#javaPhrase15").hide();
         $("#javaPhrase10").hide();
         $("#javaPhrase05").hide();
         $("#javaPhrase00").hide();
     } else if (totalJava === 15) {
-      $("#javaImg").show();
         $("#javaPhrase20").hide();
-        $("#javaPhrase15").show();
-        $("#javaPhrase10").hide();
-        $("#javaPhrase05").hide();
-        $("#javaPhrase00").hide();
+        $("#javaPhrase15").fadeIn(5000);
+        $("#javaPhrase10").hide(5000);
+        $("#javaPhrase05").hide(9000);
+        $("#javaPhrase00").hide(20000);
     } else if (totalJava === 10) {
-      $("#javaImg").show();
         $("#javaPhrase20").hide();
-        $("#javaPhrase15").hide();
-        $("#javaPhrase10").show();
-        $("#javaPhrase05").hide();
-        $("#javaPhrase00").hide();
+        $("#javaPhrase15").hide(3000);
+        $("#javaPhrase10").fadeIn(7000);
+        $("#javaPhrase05").hide(9000);
+        $("#javaPhrase00").hide(20000);
       }  else if (totalJava === 05) {
-        $("#javaImg").show();
         $("#javaPhrase20").hide();
-        $("#javaPhrase15").hide();
-        $("#javaPhrase10").hide();
-        $("#javaPhrase05").show();
-        $("#javaPhrase00").hide();
+        $("#javaPhrase15").hide(7030);
+        $("#javaPhrase10").hide(8050);
+        $("#javaPhrase05").fadeIn(9000);
+        $("#javaPhrase00").hide(20000);
       } else {
-        $("#javaImg").show();
           $("#javaPhrase20").hide();
-          $("#javaPhrase15").hide();
-          $("#javaPhrase10").hide();
-          $("#javaPhrase05").hide();
-          $("#javaPhrase00").show();
+          $("#javaPhrase15").hide(3000);
+          $("#javaPhrase10").hide(5000);
+          $("#javaPhrase05").hide(9000);
+          $("#javaPhrase00").fadeIn(20000);
       }
 
 // here is ruby
 
 if (totalRuby === 20) {
-  $("#rubyImg").show();
-    $("#rubyPhrase20").show();
-    $("#rubyPhrase15").hide();
-    $("#rubyPhrase10").hide();
-    $("#rubyPhrase05").hide();
-    $("#rubyPhrase00").hide();
+    $("#rubyPhrase20").fadeIn();
+    $("#rubyPhrase15").hide(3000);
+    $("#rubyPhrase10").hide(5000);
+    $("#rubyPhrase05").hide(9000);
+    $("#rubyPhrase00").hide(20000);
 } else if (totalRuby === 15) {
-  $("#rubyImg").show();
     $("#rubyPhrase20").hide();
-    $("#rubyPhrase15").show();
-    $("#rubyPhrase10").hide();
-    $("#rubyPhrase05").hide();
-    $("#rubyPhrase00").hide();
+    $("#rubyPhrase15").fadeIn();
+    $("#rubyPhrase10").hide(5000);
+    $("#rubyPhrase05").hide(9000);
+    $("#rubyPhrase00").hide(20000);
 } else if (totalRuby === 10) {
-  $("#rubyImg").show();
     $("#rubyPhrase20").hide();
-    $("#rubyPhrase15").hide();
-    $("#rubyPhrase10").show();
-    $("#rubyPhrase05").hide();
-    $("#rubyPhrase00").hide();
+    $("#rubyPhrase15").hide(3000);
+    $("#rubyPhrase10").fadeIn(8000);
+    $("#rubyPhrase05").hide(9000);
+    $("#rubyPhrase00").hide(20000);
   }  else if (totalRuby === 05) {
-    $("#rubyImg").show();
     $("#rubyPhrase20").hide();
-    $("#rubyPhrase15").hide();
-    $("#rubyPhrase10").hide();
-    $("#rubyPhrase05").show();
-    $("#rubyPhrase00").hide();
+    $("#rubyPhrase15").hide(7030);
+    $("#rubyPhrase10").hide(8050);
+    $("#rubyPhrase05").fadeIn(9000);
+    $("#rubyPhrase00").hide(30000);
   } else {
-    $("#rubyImg").show();
       $("#rubyPhrase20").hide();
-      $("#rubyPhrase15").hide();
-      $("#rubyPhrase10").hide();
-      $("#rubyPhrase05").hide();
-      $("#rubyPhrase00").show();
+      $("#rubyPhrase15").hide(3000);
+      $("#rubyPhrase10").hide(5000);
+      $("#rubyPhrase05").hide(9000);
+      $("#rubyPhrase00").fadeIn(20000);
   }
-
 // here is PHP
 
 if (totalPhp === 20) {
-  $("#phpImg").show();
-    $("#phpPhrase20").show();
-    $("#phpPhrase15").hide();
-    $("#phpPhrase10").hide();
-    $("#phpPhrase05").hide();
-    $("#phpPhrase00").hide();
+    $("#phpPhrase20").fadeIn();
+    $("#phpPhrase15").hide(3000);
+    $("#phpPhrase10").hide(5000);
+    $("#phpPhrase05").hide(9000);
+    $("#phpPhrase00").hide(11000);
 } else if (totalPhp === 15) {
-  $("#phpImg").show();
     $("#phpPhrase20").hide();
-    $("#phpPhrase15").show();
-    $("#phpPhrase10").hide();
-    $("#phpPhrase05").hide();
-    $("#phpPhrase00").hide();
+    $("#phpPhrase15").fadeIn();
+    $("#phpPhrase10").hide(5000);
+    $("#phpPhrase05").hide(9000);
+    $("#phpPhrase00").hide(11000);
 } else if (totalPhp === 10) {
-  $("#phpImg").show();
     $("#phpPhrase20").hide();
-    $("#phpPhrase15").hide();
-    $("#phpPhrase10").show();
-    $("#phpPhrase05").hide();
-    $("#phpPhrase00").hide();
+    $("#phpPhrase15").hide(3000);
+    $("#phpPhrase10").fadeI(8000);
+    $("#phpPhrase05").hide(9000);
+    $("#phpPhrase00").hide(11000);
   }  else if (totalPhp === 05) {
-    $("#phpImg").show();
     $("#phpPhrase20").hide();
-    $("#phpPhrase15").hide();
-    $("#phpPhrase10").hide();
-    $("#phpPhrase05").show();
-    $("#phpPhrase00").hide();
-  } else {
-    $("#phpImg").show();
+    $("#phpPhrase15").hide(7030);
+    $("#phpPhrase10").hide(8050);
+    $("#phpPhrase05").fadeIn(9000);
+    $("#phpPhrase00").hide(11000);
+    } else {
       $("#phpPhrase20").hide();
-      $("#phpPhrase15").hide();
-      $("#phpPhrase10").hide();
-      $("#phpPhrase05").hide();
-      $("#phpPhrase00").show();
+      $("#phpPhrase15").hide(3000);
+      $("#phpPhrase10").hide(5000);
+      $("#phpPhrase05").hide(9000);
+      $("#phpPhrase00").fadeIn(11000);
   }
 
 // Here is CS
 
 if (totalCs === 20) {
-  $("#csImg").show();
-    $("#csPhrase20").show();
-    $("#csPhrase15").hide();
-    $("#csPhrase10").hide();
-    $("#csPhrase05").hide();
-    $("#csPhrase00").hide();
+    $("#csPhrase20").fadeIn();
+    $("#csPhrase15").hide(3000);
+    $("#csPhrase10").hide(5000);
+    $("#csPhrase05").hide(9000);
+    $("#csPhrase00").hide(11000);
 } else if (totalCs === 15) {
-  $("#csImg").show();
     $("#csPhrase20").hide();
-    $("#csPhrase15").show();
-    $("#csPhrase10").hide();
-    $("#csPhrase05").hide();
-    $("#csPhrase00").hide();
+    $("#csPhrase15").fadeIn();
+    $("#csPhrase10").hide(5000);
+    $("#csPhrase05").hide(9000);
+    $("#csPhrase00").hide(11000);
 } else if (totalCs === 10) {
-  $("#csImg").show();
     $("#csPhrase20").hide();
-    $("#csPhrase15").hide();
-    $("#csPhrase10").show();
-    $("#csPhrase05").hide();
-    $("#csPhrase00").hide();
+    $("#csPhrase15").hide(3000);
+    $("#csPhrase10").fadeIn(8000);
+    $("#csPhrase05").hide(9000);
+    $("#csPhrase00").hide(11000);
   }  else if (totalCs === 05) {
-    $("#csImg").show();
     $("#csPhrase20").hide();
-    $("#csPhrase15").hide();
-    $("#csPhrase10").hide();
-    $("#csPhrase05").show();
-    $("#csPhrase00").hide();
+    $("#csPhrase15").hide(7030);
+    $("#csPhrase10").hide(8050);
+    $("#csPhrase05").fadeIn(9000);
+    $("#csPhrase00").hide(11000);
   } else {
-    $("#csImg").show();
       $("#csPhrase20").hide();
-      $("#csPhrase15").hide();
-      $("#csPhrase10").hide();
-      $("#csPhrase05").hide();
-      $("#csPhrase00").show();
+      $("#csPhrase15").hide(3000);
+      $("#csPhrase10").hide(5000);
+      $("#csPhrase05").hide(9000);
+      $("#csPhrase00").fadeIn(11000);
   }
-
-
     event.preventDefault();
   });
 });

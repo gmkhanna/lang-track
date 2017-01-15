@@ -1,26 +1,56 @@
 .jumbotron {
-background-image: url("../img/download.jpg");
+background-image: url("../img/coding.jpg");
 text-shadow: 4px 4px 4px red;
-background-size: 100%;
+font-size: 25px;
+background-size: auto 100%;
+background-repeat: no-repeat;
+background-color: #1e0121;
+margin-top: 10px;
+}
+
+.container {
+  background-color: grey;
 }
 
 .jumboH1{
   color: white;
+  font-size: 20px;
+  right: 15px;
+  top: 10px;
 }
 
-.result {
-  display: none;
-}
-
-.resultImg {
-  display: none;
-  float: left;
-}
-
-.resultPhrase {
+.result-main {
   display: none;
 }
 
 #javaImg {
+  display: none;
+  z-index: -1;
   float: left;
+}
+
+#csImg {
+  display: none;
+  z-index: -1;
+  float: left;
+}
+
+#rubyImg {
+  display: none;
+  z-index: -1;
+  float: left;
+}
+
+#phpImg{
+  display: none;
+  z-index: -1;
+  float: left;
+}
+
+.result-phrase {
+  display: none;
+  position: relative;
+  left: -20px;
+  color: green;
+  text-shadow: 2px 2px 2px black;
 }
