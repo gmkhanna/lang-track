@@ -22,7 +22,7 @@ _Nothing - other than the code needing refactoring_
 ## Support and contact details
 
 _Feel free to contact me - give me some pointers or feedback!
-gmkhanna@gmail.comp  --
+gmkhanna@gmail.com  --
 
 ## Technologies Used
 
